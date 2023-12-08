@@ -96,13 +96,6 @@ Module Program
         Return list.ToArray()
     End Function
 
-    Private Sub PrintArray(doubles As Double())
-        For Each item As Double In doubles
-            Console.Write(item & " ")
-        Next
-        Console.WriteLine()
-    End Sub
-
     Sub BucketSort_Double(array As Double())
         ' Create empty buckets
         Dim buckets(array.Length - 1) As List(Of Double)
@@ -195,13 +188,6 @@ Module Program
                 index += 1
             Next
         Next
-    End Sub
-
-    Sub PrintArray(arr As Integer())
-        For Each item As Integer In arr
-            Console.Write(item & " ")
-        Next
-        Console.WriteLine()
     End Sub
 End Module
 
